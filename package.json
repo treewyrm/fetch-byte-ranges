@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/treewyrm/fetch-byte-ranges"
+    "url": "git+https://github.com/treewyrm/fetch-byte-ranges.git"
   }
 }
