@@ -1,0 +1,49 @@
+{
+  "name": "@treewyrm/fetch-byte-ranges",
+  "version": "0.1.1",
+  "description": "Isomorphic HTTP byte-range fetcher. Concurrent partial GETs with preflight, stream output per range.",
+  "keywords": [
+    "fetch",
+    "byte-range",
+    "http-range",
+    "partial-content",
+    "206",
+    "stream",
+    "isomorphic"
+  ],
+  "author": "Yuriy Alexeev",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.d.ts.map",
+    "dist/index.js",
+    "dist/index.js.map",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/index.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.15",
+    "typescript": "^5.9.3",
+    "undici": "^7.24.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treewyrm/fetch-byte-ranges"
+  }
+}
